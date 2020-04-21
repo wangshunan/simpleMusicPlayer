@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title >本地播放器</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/789567c2d9.js" crossorigin="anonymous"></script>
+    <!-- <link href="../node_modules/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div class="container mt-4 ">
+        <h1>我的播放器</h1>
+        <button type="button" id="add-music-button" class="btn btn-primary btn-lg btn-block mt-4">
+          添加音乐到播放列表
+        </button>
+        <div id="tracksList" class="mt-4">
+        </div>
+    </div>
+    <div class="container fixed-bottom bg-white pb-2 mt-4">
+      <hr/>
+      <div class="row my-2 align-items-center" id="player-status">
+      </div>
+    </div>
+    <script>
+        require('./index.js')
+    </script>
+  </body>
+</html>

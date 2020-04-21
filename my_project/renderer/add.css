@@ -1,0 +1,7 @@
+body {
+  user-select: none;
+}
+
+.fa-trash-alt:hover {
+  cursor: pointer;
+}
