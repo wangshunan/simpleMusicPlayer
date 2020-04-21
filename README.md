@@ -5,8 +5,8 @@
 
 ```bash
 # install dependent components
-npm install
-npm install nodemon --save
+npm i
+npm i nodemon --save
 
 # run application in development mode
 npm start
