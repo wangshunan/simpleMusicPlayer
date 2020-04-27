@@ -1,0 +1,23 @@
+directories:
+  output: dist
+  buildResources: build
+appId: simpleMusicPlayer
+asar: true
+files:
+  - filter:
+      - '**/*'
+      - '!docs${/*}'
+      - '!node_modules/@paulcbetts/cld/deps/cld${/*}'
+win:
+  target:
+    - target: nsis-web
+      arch:
+        - ia32
+  icon: build/icons/icon.png
+nsis:
+  allowToChangeInstallationDirectory: true
+  oneClick: false
+  perMachine: false
+  createStartMenuShortcut: false
+  createDesktopShortcut: true
+electronVersion: 8.2.0

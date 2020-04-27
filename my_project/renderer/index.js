@@ -127,14 +127,14 @@ const renderListHTML = (tracks) => {
     }, '')
 
     const trackHTML = `<ul class="container list-group scroll ${playListStyle}">${tracksListHTML}</ul>`
-    const emptyTrackHTML = `没有音乐文件`
+    const emptyTrackHTML = `音楽ファイルがありません`
     tracksList.innerHTML = tracks.length ? trackHTML : emptyTrackHTML
 }
 
 const renderPlayerHTML = (track ,duration) => {
     const player = $('player-status')
     const html = `<div class="col-5 font-weight-bold">
-                    正在播放: ${track.fileName}
+                    再生中: ${track.fileName}
                 </div>
                 <div class="col-3" align="right">
                     <span id="current-seeker">0:00</span> / ${converDuration(duration)}
@@ -198,7 +198,7 @@ const nextTrack = () => {
     for ( i = 0; i < allTracks.length; i++ ) {
         if ( allTracks[i].id === currentTrack.id ) {
             musicAudio.pause()
-            currentTrack = allTracks[ i === allTracks.length - 1 ? i : i + 1 ]
+            currentTrack = allTracks[ i === allTracks.length - 1 ? 0 : i + 1 ]
             musicAudio.src = currentTrack.path
             return
         }

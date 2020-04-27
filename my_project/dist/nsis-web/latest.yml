@@ -1,0 +1,14 @@
+version: 1.0.0
+files:
+  - url: my-music-player-Web-Setup-1.0.0.exe
+    sha512: VpEPSnGMJG5VY/ibNmrCdJFEAfS+erukZ5nIctaYAqcBd+hxr9B+eX3uRK83n4uafFs5/kmYRGQ37ghHo3Stqg==
+path: my-music-player-Web-Setup-1.0.0.exe
+sha512: VpEPSnGMJG5VY/ibNmrCdJFEAfS+erukZ5nIctaYAqcBd+hxr9B+eX3uRK83n4uafFs5/kmYRGQ37ghHo3Stqg==
+packages:
+  ia32:
+    size: 94257513
+    sha512: OLozYIYPOVKSVdz8bBXTegA9lARfidCoiNT4qJTv3xHbGNhrcJ8PIV/CTWD9sW5ru2N7S3iiMm7Bi1o7AJFEig==
+    blockMapSize: 100125
+    path: my-music-player-1.0.0-ia32.nsis.7z
+    file: my-music-player-1.0.0-ia32.nsis.7z
+releaseDate: '2020-04-27T09:19:23.926Z'
